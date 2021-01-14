@@ -10,7 +10,7 @@ services:
         restart: always
         environment:
             - JENKINS_ADMIN_ID=admin
-            - JENKINS_ADMIN_PASSWORD=password
+            - JENKINS_ADMIN_PASSWORD=Xunilinux
         ports:
             - "8080:8080"
             - "50000:50000"
