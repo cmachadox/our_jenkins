@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+    jenkins:
+        image: cmachadox/jenkins:v1.0
+        privileged: true
+        user: root
+        container_name: jenkins_adcc
+        hostname: jenkins.adcc.com.net
+        restart: always
+        environment:
+            - JENKINS_ADMIN_ID=admin
+            - JENKINS_ADMIN_PASSWORD=password
+        ports:
+            - "8080:8080"
+            - "50000:50000"
+        volumes:
+            - /var/lib/docker/volumes/jenkins_vol:/var/jenkins_home
+            - /var/run/docker.sock:/var/run/docker.sock
