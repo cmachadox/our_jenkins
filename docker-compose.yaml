@@ -5,12 +5,12 @@ services:
         image: cmachadox/jenkins:v1.0
         privileged: true
         user: root
-        container_name: jenkins_adcc
-        hostname: jenkins.adcc.com.net
+        container_name: jenkins
+        hostname: jenkins.net
         restart: always
         environment:
             - JENKINS_ADMIN_ID=admin
-            - JENKINS_ADMIN_PASSWORD=Xunilinux
+            - JENKINS_ADMIN_PASSWORD=admin
         ports:
             - "8080:8080"
             - "50000:50000"
