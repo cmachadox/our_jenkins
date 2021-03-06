@@ -15,3 +15,4 @@ docker run -d  -v jenkins_vol:/var/jenkins_home -p 8080:8080 -p 50000:50000 --en
 ```
 docker-compose up -d
 ```
+**Caso queira atualizas os plugins é só editar o arquivo ```plugins.txt``` com as novas versões e depois buildar uma nova imagem**
