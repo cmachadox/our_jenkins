@@ -1,4 +1,5 @@
-FROM jenkins/jenkins:latest
+#FROM jenkins/jenkins:latest
+FROM jenkins/jenkins:alpine
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 ENV JENKINS_JENKINS_CONFIG /usr/share/jenkins/ref/jenkins.yaml
 COPY ./plugins.txt  /usr/share/jenkins/ref/plugins.txt
